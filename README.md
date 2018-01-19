@@ -1,5 +1,7 @@
 ## Axios Demo
 
+[Demo Link](https://dbilgili.github.io/Axios-Demo/build/index.html)
+
 This repository is a quick Axios demo for fetching data from _www.randomuser.me_ server.
 
 The search functionality filters the fetched data in accordance with user input and displays the results accordingly.
