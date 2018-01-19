@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   filterNames(e){
-    this.setState({users: this.state.store.filter((item) => item.name.search(e.target.value) !== -1)})
+    this.setState({users: this.state.store.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()))})
   }
 
   render() {

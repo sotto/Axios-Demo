@@ -31,6 +31,10 @@ li {
   color: #959595;
 }
 
+li:last-of-type {
+  margin-bottom: 50px;
+}
+
 .Card {
   font-size: 1.5rem;
   font-weight: bold;
@@ -38,7 +42,6 @@ li {
   flex-direction: column;
   align-items: center;
   width: 200px;
-  height: 340px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 5px 3px 0 #ebebeb;
@@ -79,7 +82,7 @@ li {
 }
 
 .isLoading {
-  margin-top: 30px;
+  margin: 30px 0;
   width: 150px;
   filter: opacity(0.3);
 }
