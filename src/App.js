@@ -15,11 +15,11 @@ class App extends Component {
   }
 
   componentDidMount(){
-    axios.get('https://randomuser.me/api/?results=10&nat=fr')
+    axios.get('https://randomuser.me/api/?results=10&inc=name,registered&nat=fr')
     .then(results => results.data.results.map(result => (
       {
         name: `${result.name.first} ${result.name.last}`,
-        id: result.login.md5
+        id: result.registered
       })))
     .then(newData => this.setState({users: newData, store: newData}))
     .catch(error => alert(error))
