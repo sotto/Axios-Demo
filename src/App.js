@@ -30,12 +30,12 @@ class App extends Component {
   }
 
   render() {
-    const {users, store} = this.state
+    const {users} = this.state
     return (
       <div className="Card">
         <div className="header">NAME LIST</div>
         <SearchBar searchFunc={(e) => this.filterNames(e)}/>
-        <List usernames={users} store={store}/>
+        <List usernames={users}/>
       </div>
     );
   }
