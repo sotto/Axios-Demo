@@ -11,7 +11,6 @@ class App extends Component {
       users: [],
       store: []
     }
-    this.filterNames = this.filterNames.bind(this)
   }
 
   componentDidMount(){
