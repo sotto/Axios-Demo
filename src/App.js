@@ -16,7 +16,7 @@ class App extends Component {
 
   componentDidMount(){
     axios.get('https://randomuser.me/api/?results=10&inc=name,registered&nat=fr')
-    .then(results => results.data.results.map(result => (
+    .then(json => json.data.results.map(result => (
       {
         name: `${result.name.first} ${result.name.last}`,
         id: result.registered
