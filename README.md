@@ -8,6 +8,6 @@ The search functionality filters the fetched data in accordance with user input 
 
 In this example you will also find the use case of a higher order components (HOC), which handles the page loading phase.
 
-After cloning, run `npm install` to fetch the required modules and then `npm start` to initialize the local server.
+After cloning, run `yarn install` to fetch the required modules and then `yarn start` to initialize the local server.
 
 Make sure you have **NodeJS** installed.
